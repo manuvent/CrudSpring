@@ -30,7 +30,11 @@ public class PersonaService implements ipersonaService {
 
 	@Override
 	public int save(Persona p) {
-		// TODO Auto-generated method stub
+		int res = 0;
+		Persona persona=data.save(p); 
+		if(!persona.equals(null)) {
+			res= 1;
+		}
 		return 0;
 	}
 
